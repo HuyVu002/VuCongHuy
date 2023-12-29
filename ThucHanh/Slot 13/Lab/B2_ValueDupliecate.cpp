@@ -27,7 +27,7 @@ int main(){
         if (count == maxCount) {        // nếu có giá trị lặp lại với số lần = nhau thì printf
                                         // nếu không có case đó xảy ra thì count vẫn = maxCount khi kết thúc vòng lặp
                                         // -> vẫn printf đc max duplicate value
-            if(count > 1){  // lí do đặt count = 1 chứ ko phải là 0
+            if(maxCount > 1){  // lí do đặt count = 1 chứ ko phải là 0
                 printf("gia tri lap lai nhieu nhat la: %d\n ", arr[i]);
             }else{
                 printf("khong co gia tri trung lap");
