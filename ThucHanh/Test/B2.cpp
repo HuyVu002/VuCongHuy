@@ -10,7 +10,7 @@
 float average(int s[], int n) {
     if (n <= 0) {
         printf("Mang khong co phan tu.\n");
-        return 0.0;
+        return 0;
     }
 
     int tong = 0;
