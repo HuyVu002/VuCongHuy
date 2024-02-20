@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            /* box-sizing: border-box; */
+        }
+        body{
+            background-color: #fafafa;
+            font-size: 14px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            line-height: 1.35;
+        }
+        .container{
+            background-color: rgb(224, 220, 220);
+            height:700px;
+            width: 50%;
+            margin: 0 auto;
+        }
+        div{
+            text-align: center;
+        }
+        .login{
+            width: 250px;
+            height: 30px;
+            background-color: rgb(86, 129, 197);
+            color: white;
+            border-radius: 5px ;
+
+        }
+        a {
+
+            color: white;
+            text-decoration: none; /* Loại bỏ cái gạch chân (underline) */
+        }
+        hr{
+            display:inline-block
+        }
+        button{
+            margin: 5px;
+        }
+        img{
+            display: inline-block;
+            width: 15px;
+            margin: 0 5px;
+        }
+        .logo{
+            width: 15px;
+            height: 15px;
+            background-color: rgb(131, 130, 130);
+            margin: 0;
+            padding:0;
+        }
+        h2{
+            margin: 20px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h2>Create Account</h2>
+            <p>Get started with your free account</p>
+        </div>
+        <div>
+            <button class="login"><img src="Image/twitter.svg"><a href="#">Login via Twitter</a></button>
+            <br>
+            <button class="login"><img src="Image/facebook.svg"><a href="#">Login via Facebook</a></button>
+        </div>
+        <div><hr>OR<hr></div>
+        <form class="box">
+            <img src="Image/user-solid.svg" class="logo"><input type="text" id="name" placeholder="Full name"><br>
+            <img src="Image/envelope-solid.svg"class="logo"><input type="email" id="email" name="email" required placeholder="Email address"><br>
+            <img src="Image/phone-solid.svg" class="logo">
+            <select style="width: 54px;" id="phone">
+                <option value="usa">+84</option>
+                <option value="canada">+67 Canada</option>
+                <option value="uk">+81 UK</option>
+                <input style="width: 110px;" type="number" name="phone number" placeholder="Phone number">
+            </select><br>
+            <img src="Image/building-solid.svg" class="logo">
+            <select style="width: 165px;" id="phone">
+                <option value="usa"></option>
+                <option value="canada"></option>
+                <option value="uk"></option>
+            </select><br>
+            <img src="Image/lock-solid.svg" class="logo"><input type="password" id="password" name="password" required placeholder="Create password"><br>
+            <img src="Image/lock-solid.svg" class="logo"><input type="password" id="password" name="password" required placeholder="Reapeat password"><br>
+            <button class="login" type="submit">Create Account</button>
+        </form>
+        <p>Have an account? <a  style="color: blue;" href="#">Log In</a></p>
+    </div>
+        
+
+</body>
+</html>
